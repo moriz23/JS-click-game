@@ -73,6 +73,6 @@ function finalResult(){
 
 function shamoonsAlert(){
 	setTimeout(function(){
-		alert('Assignment called for an alert.  Here you go:  You clicked on ' + counter + " pictures.");
+		alert('Assignment called for an alert:  You clicked on ' + counter + " pictures.");
 	}, 4000);
 }
