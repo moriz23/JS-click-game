@@ -3,7 +3,8 @@ var startButton = document.getElementById('start-button');
 var counter = 0;
 var alreadyClicked = [];
 
-// must set timer and bind event to start button
+
+// click function
 
 function clickFriend(e){
 
@@ -23,15 +24,11 @@ function clickFriend(e){
 		alreadyClicked.push(clicked);
 		counter++;
 	}
-
-	console.log(alreadyClicked);
-	console.log('count: ' + counter);
 }
-
 
 startButton.addEventListener('click', startGame);
 
-// timeout-test
+// start game and set time
 
 function startGame(){
 	table.addEventListener('click', clickFriend);
@@ -40,5 +37,8 @@ function startGame(){
 	setTimeout(function(){
 		table.removeEventListener('click', clickFriend);
 		console.log('you done, fool!');
+		// call results function here
 	}, 20000)
 }
+
+// results function
