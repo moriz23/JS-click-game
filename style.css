@@ -16,6 +16,7 @@
 .start-button{
   border: 1px solid #111AF7;
   transition: border 1s, background 1.5s, color 1.2s;
+  margin-bottom: 50px;
 }
 
 .start-button:hover{
