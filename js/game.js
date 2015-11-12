@@ -40,7 +40,7 @@ function startGame(){
 		table.removeEventListener('click', clickFriend);
 		// call results function here
 		finalResult();
-	}, 20000)
+	}, 20000);
 }
 
 // results function
@@ -66,4 +66,12 @@ function finalResult(){
 
 	finalCount.className += "appear";
 	msgArea.className = "final-results";
+
+	shamoonsAlert();
+}
+
+function shamoonsAlert(){
+	setTimeout(function(){
+		alert('Assignment called for an alert.  Here you go:  You clicked on ' + counter + " pictures.");
+	}, 4000);
 }
