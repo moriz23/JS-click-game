@@ -1,0 +1,13 @@
+.final-results{
+  border: 3px solid red;
+  padding: 20px 0;
+  font-size: 2em;
+}
+
+.appear{
+  display: inherit;
+}
+
+.poof{
+  display: none;
+}
