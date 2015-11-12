@@ -53,17 +53,18 @@ function finalResult(){
 	if(counter === 0){
 		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures.  You either passed out or you have no fingers.";
 	}else if(counter >0 && counter <= 5){
-		msgArea.textContent = msgArea.textContent = "You clicked " + counter + " out of the 20 pictures.  Drunk, you have to be drunk...";
+		msgArea.textContent = msgArea.textContent = "You clicked " + counter + " out of the 20 pictures.  Someone had a few, didn't they?";
 	}else if(counter >5 && counter <= 10){
-		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures.  You're still on the bottom part of the clicking bell curve.";
+		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures.  You know you're supposed to click on the pictures, right?";
 	}else if(counter >10 && counter <=15){
 		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures. You're getting there.  Don't get cocky, kid.";
 	}else if(counter > 15 && counter <20){
 		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures. You're well on your way to becoming a click-master.";
 	}else if(counter === 20){
-		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures. You're a true click-master.  Your iron finger probably breaks mice in weeks.  They will write legends about you, or at least you'll be mentioned in the footnote of a blog somewhere.";
+		msgArea.textContent = "You clicked " + counter + " out of the 20 pictures. You're a true click-master.  Your iron finger probably breaks mice in weeks.  They will write legends about you, or at least you might be mentioned in the footnote of a blog somewhere.";
 	}
 
+	table.className = "poof";
 	finalCount.className += "appear";
 	msgArea.className = "final-results";
 

@@ -1,7 +1,8 @@
 .final-results{
-  border: 3px solid red;
+  border: 3px solid #FFA600;
   padding: 20px 0;
   font-size: 2em;
+  margin-top: 50px;
 }
 
 .appear{
@@ -10,4 +11,15 @@
 
 .poof{
   display: none;
+}
+
+.start-button{
+  border: 1px solid #111AF7;
+  transition: border 1s, background 1.5s, color 1.2s;
+}
+
+.start-button:hover{
+  border: 1px solid #FF0010;
+  background: #FFF000;
+  color: #FF0010;
 }
