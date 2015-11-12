@@ -1,3 +1,7 @@
+#game-table img{
+  cursor: pointer;
+}
+
 .final-results{
   border: 3px solid #FFA600;
   padding: 20px 0;
