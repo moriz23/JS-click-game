@@ -1,0 +1,13 @@
+#game-table img{
+  cursor: pointer;
+}
+
+.start-button:hover{
+  border: 1px solid #FF0010;
+  background: #FFF000;
+  color: #FF0010;
+}
+
+#gif-width {
+  width: 100%;
+}
