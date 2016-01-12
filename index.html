@@ -1,61 +1,77 @@
-<!doctype HTML>
 
+<!DOCTYPE html>
 <html>
-
 <head>
-	<title>Face Count Game</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Face Count Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
 
-	<div class="table-responsive">
-		<table id="game-table" class="table table-bordered">
-			<tr>
-				<td><img id="dog" class="img-responsive" src="img/dog.jpg"></td>
-				<td><img id="mushroom" class="img-responsive" src="img/mushroom.jpg" title="where am I? Who am I?"></td>
-				<td><img id="capitalism" class="img-responsive" src="img/capitalism.jpg"></td>
-				<td><img id="duck" class="img-responsive" src="img/duck.jpg" title="Quack!"></td>
-			</tr>
-			<tr>
-				<td><img id="oldman" class="img-responsive" src="img/oldman.jpg" title="Get off my lawn!"></td>
-				<td><img id="dogmeat" class="img-responsive" src="img/dogmeat.jpg" title="never returned to Sanctuary..."></td>
-				<td><img id="wolfpack" class="img-responsive" src="img/pack.jpg"></td>
-				<td><img id="weird" class="img-responsive" src="img/weirdgirl.jpg"></td>
-			</tr>
-			<tr>
-				<td><img id="guitargirl" class="img-responsive" src="img/wonderwall.jpg"></td>
-				<td><img id="penguin" class="img-responsive" src="img/penguin.jpg"></td>
-				<td><img id="flirt" class="img-responsive" src="img/flirt.jpg" title='"Hey there, beautiful!"'></td>
-				<td><img id="winter" class="img-responsive" src="img/winter.jpg"></td>
-			</tr>
-			<tr>
-				<td><img id="prairiehouse" class="img-responsive" src="img/houseonprairie.jpg"></td>
-				<td><img id="feelinglunch" class="img-responsive" src="img/lunch.jpg"></td>
-				<td><img id="redhead" class="img-responsive" src="img/redhead.jpg"></td>
-				<td><img id="hardlife" class="img-responsive" src="img/hardlife.jpg"></td>
-			</tr>
-			<tr>
-				<td><img id="frosty" class="img-responsive" src="img/snowman.jpg"></td>
-				<td><img id="skull" class="img-responsive" src="img/inevitability.jpg"></td>
-				<td><img id="gainz" class="img-responsive" src="img/fitgirl.jpg"></td>
-				<td><img id="bigcat" class="img-responsive" src="img/skycat.jpg"></td>
-			</tr>
-		</table>
-	</div>
+  <!--Start Game-->
 
-	<div class="col-md-5 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-3">
-		<div id="start-button" class="btn btn-default start-button">Start The Game</div>
-	</div>
+  <nav class="navbar navbar-default">
+    <div class="col-md-6 col-md-offset-6 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-3">
+      <button type="button" id="start-button" class="btn btn-default">Start the Game</button>
+    </div>
+  </nav>
 
-	<div class="row-fluid">
-		<div id="final" class="col-md-8 col-md-offset-2 text-center poof"></div>
-	</div>
+  <!--Table Images-->
 
-<script type="text/javascript" src="js/game.js"></script>
+  <div class="table-responsive">
+    <table id="game-table" class="table table-bordered">
+      <tr>
+        <td><img id="dog" class="img-responsive" src="img/dog.jpg" alt="dog"></td>
+        <td><img id="mushroom" class="img-responsive" src="img/mushroom.jpg" alt="girl in paint"></td>
+        <td><img id="capitalism" class="img-responsive" src="img/capitalism.jpg" alt="crooked cops"></td>
+        <td><img id="duck" class="img-responsive" src="img/duck.jpg" alt="Smiley face" title="duckface girl"></td>
+      </tr>
+      <tr>
+        <td><img id="oldman" class="img-responsive" src="img/oldman.jpg" alt="old man"></td>
+        <td><img id="dogmeat" class="img-responsive" src="img/dogmeat.jpg" alt="pondering wolf"></td>
+        <td><img id="wolfpack" class="img-responsive" src="img/pack.jpg" alt="wolves"></td>
+        <td><img id="weird" class="img-responsive" src="img/weirdgirl.jpg" alt="emo girl"></td>
+      </tr>
+      <tr>
+        <td><img id="guitargirl" class="img-responsive" src="img/wonderwall.jpg" alt="guitar girl"></td>
+        <td><img id="penguin" class="img-responsive" src="img/penguin.jpg" alt="penguin"></td>
+        <td><img id="flirt" class="img-responsive" src="img/flirt.jpg" alt="Smiley face"></td>
+        <td><img id="winter" class="img-responsive" src="img/winter.jpg" alt="girl in snow"></td>
+      </tr>
+      <tr>
+        <td><img id="prairiehouse" class="img-responsive" src="img/houseonprairie.jpg" alt="prairie house"></td>
+        <td><img id="feelinglunch" class="img-responsive" src="img/lunch.jpg" alt="douche bag"></td>
+        <td><img id="redhead" class="img-responsive" src="img/redhead.jpg" alt="girl in red dress"></td>
+        <td><img id="hardlife" class="img-responsive" src="img/hardlife.jpg" alt="old man in beanie"></td>
+      </tr>
+      <tr>
+        <td><img id="frosty" class="img-responsive" src="img/snowman.jpg" alt="snowman"></td>
+        <td><img id="skull" class="img-responsive" src="img/inevitability.jpg" alt="skull"></td>
+        <td><img id="gainz" class="img-responsive" src="img/fitgirl.jpg" alt="ripped woman"></td>
+        <td><img id="bigcat" class="img-responsive" src="img/skycat.jpg" alt="cat"></td>
+      </tr>
+    </table>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade bs-example" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-success" data-dismiss="modal" id="close">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+  <script type="text/javascript" src="js/game.js"></script>
 </body>
-
 </html>
