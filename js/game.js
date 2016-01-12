@@ -45,7 +45,7 @@ $(document).ready(function(){
   function finalResult(){
     if(counter === 0){
       $("h4").html("You clicked " + counter + " out of the 20 pictures. You Suck!");
-        $("p").html("<img id='gif-width' src='http://i.imgur.com/1HWQIPa.gif'>");
+        $("p").html("<img id='gif-width' src='https://i.imgur.com/1HWQIPa.gif'>");
           $("#myModal").modal("show");  
     } else if(counter >0 && counter <= 5){
         $("h4").html("You clicked " + counter + " out of the 20 pictures. Are you even trying?");
@@ -61,11 +61,11 @@ $(document).ready(function(){
             $("#myModal").modal("show");
     } else if(counter > 15 && counter <20){
         $("h4").html("You clicked " + counter + " out of the 20 pictures. Nice Job Bro!");
-          $("p").html("<img id='gif-width' src='http://3.bp.blogspot.com/-iEse-1-jcQM/Vd4T3nfV46I/AAAAAAAAD0g/W19FoXKXy_A/s320/youre-awesome.gif'>");
+          $("p").html("<img id='gif-width' src='https://3.bp.blogspot.com/-iEse-1-jcQM/Vd4T3nfV46I/AAAAAAAAD0g/W19FoXKXy_A/s320/youre-awesome.gif'>");
             $("#myModal").modal("show");
     } else if(counter === 20){
         $("h4").html("You clicked " + counter + " out of the 20 pictures. Wow Awesome Job Bro!");
-          $("p").html("<img id='gif-width' src='http://gifrific.com/wp-content/uploads/2012/08/LeBron-James-Dancing-After-Winning-Gold-Medal-2012-London-Olympics.gif'>");
+          $("p").html("<img id='gif-width' src='https://gifrific.com/wp-content/uploads/2012/08/LeBron-James-Dancing-After-Winning-Gold-Medal-2012-London-Olympics.gif'>");
             $("#myModal").modal("show");  
     } 
   }
